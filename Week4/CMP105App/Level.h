@@ -6,6 +6,7 @@
 #include <string.h>
 #include <iostream>
 #include "Player.h"
+#include "Enemy.h"
 
 
 class Level{
@@ -31,5 +32,8 @@ private:
 	sf::Texture texture;
 
 	Player mushroom;
+	
+	Enemy goomba;
+	sf::Texture enemyTexture;
 
 };
