@@ -33,7 +33,8 @@ private:
 
 	Player mushroom;
 	
+	
 	Enemy goomba;
 	sf::Texture enemyTexture;
-
+	
 };

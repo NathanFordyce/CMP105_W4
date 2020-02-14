@@ -10,8 +10,6 @@ public:
 
 	void handleInput(float dt) override;
 
-	//sf::Vector2f coord;
-
 	float speedX;
 	float speedY;
 };

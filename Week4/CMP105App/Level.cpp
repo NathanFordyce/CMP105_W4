@@ -15,6 +15,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	mushroom.setPosition(100, 100);
 	mushroom.setInput(input);
 
+	
 	enemyTexture.loadFromFile("gfx/goomba.png");
 	goomba.setTexture(&enemyTexture);
 	goomba.setSize(sf::Vector2f(100, 100));
