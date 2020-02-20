@@ -13,6 +13,9 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	background.setTexture(&backTexture);
 	background.setSize(sf::Vector2f(11038, 675));
 	background.setPosition(0, 0);
+	background.setWindow(window);
+	background.setInput(input);
+
 
 
 	texture.loadFromFile("gfx/Mushroom.png");
@@ -51,6 +54,7 @@ void Level::handleInput(float dt)
 		window->close();
 	}
 
+	background.handleInput(dt);
 	mushroom.handleInput(dt);
 }
 
