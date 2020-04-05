@@ -15,11 +15,15 @@ void Background::handleInput(float dt)
 {
 	view = window->getView();
 
-	if (input->isKeyDown(sf::Keyboard::D))
+	if (window->getView() < sf::Vector2f(5, 0))
 	{
-		view.move(1.0f, 0);
+		if (input->isKeyDown(sf::Keyboard::D))
+		{
+			view.move(1.0f, 0);
+		}
 	}
-	else if (input->isKeyDown(sf::Keyboard::A))
+	
+	if (input->isKeyDown(sf::Keyboard::A))
 	{
 		view.move(-1.0f, 0);
 	}
